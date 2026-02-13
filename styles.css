@@ -1,0 +1,83 @@
+body{
+    background-color: #15173D;
+    padding: 20px;
+}
+
+h1{
+    color:#E491C9;
+    text-align: center;
+
+}
+
+div{
+    background-color: #F1E9E9;
+    padding: 10%;
+    margin: 10%;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+div h2{
+    color: #15173D;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+div p {
+    color: #15173D;
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6; /* Adjust line spacing */
+    text-indent: 2em; /* Indent the first line */
+}
+
+div p br + span {
+    display: block; /* Treat the text after <br /> as a new block */
+    text-indent: 2em; /* Indent the new line */
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: #F1E9E9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(90deg); /* Start closed */
+    transition: transform 0.8s ease-in-out;
+    cursor: pointer;
+  }
+  
+.card.open {
+    transform: perspective(1000px) rotateX(0); /* Open the card */
+  }
+  
+  .card-content {
+    padding: 20px;
+    display: none; /* Initially hidden */
+  }
+  
+  .card.open .card-content {
+    display: block; /* Show content when the card is open */
+  }
+
+
+@media (max-width: 600px) {
+    div {
+        padding: 5%;
+        margin: 5%;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
