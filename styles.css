@@ -1,3 +1,199 @@
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #3E1E68;
+  overflow: hidden;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Heart shape using two rotated rectangles */
+.background span::before,
+.background span::after {
+  content: "";
+  width: 8vmin;
+  height: 12vmin;
+  background-color: currentColor;
+  display: block;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  position: absolute;
+  box-shadow: 
+      0 0 2vmin currentColor,
+      0 0 4vmin currentColor,
+      0 0 6vmin currentColor;
+}
+
+.background span::before {
+  transform: rotate(-50deg);
+  left: 6vmin;
+  top: 0;
+}
+
+.background span::after {
+  top: 0;
+  left: 10vmin;
+  transform: rotate(50deg);
+}
+
+.background span:nth-child(1) {
+  color: #E491C9;
+  top: 8%;
+  left: 85%;
+  animation-duration: 25s;
+  animation-delay: -12s;
+  transform-origin: 22vw 18vh;
+  filter: drop-shadow(-40vmin 0 5.912429574715121vmin currentColor);
+}
+.background span:nth-child(2) {
+  color: #E491C9;
+  top: 92%;
+  left: 45%;
+  animation-duration: 38s;
+  animation-delay: -28s;
+  transform-origin: -18vw 25vh;
+  filter: drop-shadow(40vmin 0 5.800781062681898vmin currentColor);
+}
+.background span:nth-child(3) {
+  color: #E491C9;
+  top: 35%;
+  left: 12%;
+  animation-duration: 52s;
+  animation-delay: -5s;
+  transform-origin: -25vw -12vh;
+  filter: drop-shadow(40vmin 0 5.099778966876315vmin currentColor);
+}
+.background span:nth-child(4) {
+  color: #E491C9;
+  top: 68%;
+  left: 78%;
+  animation-duration: 31s;
+  animation-delay: -42s;
+  transform-origin: 8vw -19vh;
+  filter: drop-shadow(40vmin 0 5.051997236028396vmin currentColor);
+}
+.background span:nth-child(5) {
+  color: #E491C9;
+  top: 15%;
+  left: 55%;
+  animation-duration: 44s;
+  animation-delay: -16s;
+  transform-origin: -14vw 22vh;
+  filter: drop-shadow(40vmin 0 5.317523991359396vmin currentColor);
+}
+.background span:nth-child(6) {
+  color: #E491C9;
+  top: 50%;
+  left: 25%;
+  animation-duration: 29s;
+  animation-delay: -35s;
+  transform-origin: 19vw -8vh;
+  filter: drop-shadow(40vmin 0 5.034978098009241vmin currentColor);
+}
+.background span:nth-child(7) {
+  color: #E491C9;
+  top: 82%;
+  left: 8%;
+  animation-duration: 21s;
+  animation-delay: -7s;
+  transform-origin: -22vw 15vh;
+  filter: drop-shadow(-40vmin 0 5.622204506669391vmin currentColor);
+}
+.background span:nth-child(8) {
+  color: #E491C9;
+  top: 25%;
+  left: 92%;
+  animation-duration: 48s;
+  animation-delay: -23s;
+  transform-origin: 12vw -21vh;
+  filter: drop-shadow(-40vmin 0 5.66749032468273vmin currentColor);
+}
+.background span:nth-child(9) {
+  color: #E491C9;
+  top: 58%;
+  left: 62%;
+  animation-duration: 35s;
+  animation-delay: -48s;
+  transform-origin: -8vw 11vh;
+  filter: drop-shadow(-40vmin 0 5.3158931140305645vmin currentColor);
+}
+.background span:nth-child(10) {
+  color: #E491C9;
+  top: 42%;
+  left: 38%;
+  animation-duration: 27s;
+  animation-delay: -19s;
+  transform-origin: 16vw -16vh;
+  filter: drop-shadow(-40vmin 0 5.855575464261092vmin currentColor);
+}
+.background span:nth-child(11) {
+  color: #E491C9;
+  top: 75%;
+  left: 50%;
+  animation-duration: 41s;
+  animation-delay: -31s;
+  transform-origin: -12vw 20vh;
+  filter: drop-shadow(40vmin 0 5.685364627106043vmin currentColor);
+}
+.background span:nth-child(12) {
+  color: #E491C9;
+  top: 12%;
+  left: 18%;
+  animation-duration: 33s;
+  animation-delay: -9s;
+  transform-origin: 24vw -14vh;
+  filter: drop-shadow(-40vmin 0 5.49917045026615vmin currentColor);
+}
+.background span:nth-child(13) {
+  color: #E491C9;
+  top: 88%;
+  left: 72%;
+  animation-duration: 46s;
+  animation-delay: -38s;
+  transform-origin: -19vw 17vh;
+  filter: drop-shadow(-40vmin 0 5.1251289184953785vmin currentColor);
+}
+.background span:nth-child(14) {
+  color: #E491C9;
+  top: 32%;
+  left: 68%;
+  animation-duration: 23s;
+  animation-delay: -14s;
+  transform-origin: 14vw 24vh;
+  filter: drop-shadow(-40vmin 0 5.149568978932735vmin currentColor);
+}
+.background span:nth-child(15) {
+  color: #E491C9;
+  top: 62%;
+  left: 5%;
+  animation-duration: 50s;
+  animation-delay: -26s;
+  transform-origin: -16vw -10vh;
+  filter: drop-shadow(-40vmin 0 5.942192267992193vmin currentColor);
+}
+
+
+
+
+
 .pangolin-regular {
     font-family: "Pangolin", cursive;
     font-weight: 400;
@@ -11,11 +207,20 @@ body{
 
   
 }
-
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
 h1{
     color:#E491C9;
     text-align: center;
     font-size: 4rem;
+    position: relative;  /* ADD THIS */
+    z-index: 10;         /* ADD THIS */
+    opacity: 0;  /* ADD THIS */
+    animation: fadeIn 3s ease-in 2s forwards;  /* ADD THIS */
+
 
 }
 
@@ -26,7 +231,10 @@ h1{
     border: 10px solid #E491C9;
     border-radius: 10px;
     box-shadow: 0 0 100px #982598;
-    
+    position: relative;  /* ADD THIS */
+    z-index: 10;
+    opacity: 0;  /* ADD THIS */
+    animation: fadeIn 3s ease-in 2s forwards;  /* ADD THIS */
 
    
 }
